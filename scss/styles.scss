@@ -1,0 +1,33 @@
+@use "mixins" as *;
+@use "variables";
+
+body{
+    @include flex-center;
+}
+
+.carrusel{
+    @include flex-center;
+    @include border-line (rgb(101, 94, 94), 3px)
+}
+
+.logo{
+    @include flex-center;
+}
+
+p.titulo-card{
+    font-size: small;
+    font-weight: bolder;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: 100% 100%;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
+
+
+
+  
