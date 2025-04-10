@@ -1,18 +1,6 @@
 @use "mixins" as *;
-@use "variables";
+@use "variables" as *;
 
-body{
-    @include flex-center;
-}
-
-.carrusel{
-    @include flex-center;
-    @include border-line (rgb(101, 94, 94), 3px)
-}
-
-.logo{
-    @include flex-center;
-}
 
 p.titulo-card{
     font-size: small;
@@ -28,6 +16,48 @@ p.titulo-card{
   height: 3rem;
 }
 
+@media (max-width:767.99px) {
+    .img-user,
+    .img-cart {
+        width: 30px;
+        height: 30px;
+    }
+    .logo-lupon {
+        width: 50px;
+        height: 50px;
+    }
+    h1 {
+        font-size: medium;
+    }
+    h2 {
+        font-size: medium;
+    }
+    .img-contactos {
+        width: 30px;
+        height: 30px;
+    }
+    .img-fb { 
+        width: 25px;
+        height: 25px;
+    }
+    .img-mapa {
+        width: 100%;
+        height: auto;
+    }
+}
 
+@media (min-width: 768px) and (max-width: 992px) {
+    .img-mapa {
+        width: 100%;
+        height: auto;
+    }
+}
 
-  
+li {
+    list-style: none;
+}
+
+footer {
+    background-color: $color-footer;
+    color: $color-texto-secundario;
+}
