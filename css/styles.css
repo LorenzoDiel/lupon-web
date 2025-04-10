@@ -1,0 +1,91 @@
+p.titulo-card {
+  font-size: small;
+  font-weight: bolder;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: 100% 100%;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
+
+li {
+  list-style: none;
+}
+
+footer {
+  background-color: black;
+  color: rgb(214, 204, 197);
+}
+
+.img-hover-wrap {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.img-hover-wrap img {
+  width: 100%;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.img-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.img-hover-wrap:hover .img-hover {
+  opacity: 1;
+}
+
+.img-hover-wrap:hover .img-normal {
+  opacity: 0;
+}
+
+h3 {
+  font-size: small;
+}
+
+@media (max-width: 767.99px) {
+  .img-user,
+  .img-cart {
+    width: 30px;
+    height: 30px;
+  }
+  .logo-lupon {
+    width: 50px;
+    height: 50px;
+  }
+  h1 {
+    font-size: medium;
+  }
+  h2 {
+    font-size: medium;
+  }
+  .img-contactos {
+    width: 30px;
+    height: 30px;
+  }
+  .img-fb {
+    width: 25px;
+    height: 25px;
+  }
+  .img-mapa {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .img-mapa {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

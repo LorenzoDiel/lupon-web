@@ -1,0 +1,14 @@
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0
+}
+
+@mixin border-line ($border-color, $border) {
+    border-color: $border-color;
+    border: $border;
+}
+
+
