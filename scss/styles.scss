@@ -1,6 +1,6 @@
 @use "mixins" as *;
 @use "variables" as *;
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Special+Gothic+Expanded+One&display=swap');
 
 html,body {
     height: 100%;
@@ -18,7 +18,11 @@ p.titulo-card{
 }
 
 h1 {
-    font: $font-h1;
+    font-family: $font-h1;
+}
+
+h2 {
+    font-family: $font-h2;
 }
 
 .carousel-control-prev-icon,

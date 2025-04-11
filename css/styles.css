@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Special+Gothic+Expanded+One&display=swap");
 html, body {
   height: 100%;
   margin: 0;
@@ -16,7 +16,11 @@ p.titulo-card {
 }
 
 h1 {
-  font: "Oswald", sans-serif;
+  font-family: "Oswald", sans-serif;
+}
+
+h2 {
+  font-family: "Times New Roman", Times, serif;
 }
 
 .carousel-control-prev-icon,

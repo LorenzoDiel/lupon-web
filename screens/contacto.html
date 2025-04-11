@@ -136,20 +136,24 @@
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>                           
+    <footer class="mt-2">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <p class="mt-2">Todos los derechos reservados</p>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+                <p class="me-2 mt-2">Contactate</p>
+                <form role="send" class="d-flex flex-row">
+                    <input class="form-control md-2" type="send" placeholder="Email" aria-label="Enviar">
+                    <button class="btn btn-outline-primary ms-2" type="button">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>                                
 </body>
-<footer>
-    <div class="row">
-        <div class="col-12 d-flex justify-content-center">
-            <p class="mt-2">Todos los derechos reservados</p>
-        </div>
-        <div class="col-12 d-flex justify-content-center">
-            <p class="me-2 mt-2">Contactate</p>
-            <form role="send" class="d-flex flex-row">
-                <input class="form-control md-2" type="send" placeholder="Email" aria-label="Enviar">
-                <button class="btn btn-outline-primary ms-2" type="button">Enviar</button>
-            </form>
-        </div>
-    </div>
-</footer>
 </html>    
