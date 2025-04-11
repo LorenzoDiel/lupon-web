@@ -1,10 +1,24 @@
 @use "mixins" as *;
 @use "variables" as *;
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+html,body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
+}
 
 p.titulo-card{
     font-size: small;
     font-weight: bolder;
+}
+
+h1 {
+    font: $font-h1;
 }
 
 .carousel-control-prev-icon,
@@ -12,8 +26,54 @@ p.titulo-card{
   background-color: rgba(0, 0, 0, 0.5);
   background-size: 100% 100%;
   border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+}
+
+li {
+    list-style: none;
+}
+
+footer {
+    background-color: $color-footer;
+    color: $color-texto-secundario;
+}
+
+.img-hover-wrap {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.img-hover-wrap img {
+    width: 100%;
+    display: block;
+    transition: opacity 0.3s ease;
+  }
+  
+.img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  
+.img-hover-wrap:hover .img-hover {
+    opacity: 1;
+  }
+  
+.img-hover-wrap:hover .img-normal {
+    opacity: 0;
+  }
+
+h3 {
+    font-size: small;
+}
+
+.img-marca {
+    height: 50px;
+    width: 50px;
 }
 
 @media (max-width:767.99px) {
@@ -51,13 +111,8 @@ p.titulo-card{
         width: 100%;
         height: auto;
     }
+    .navigation-tienda {
+        font-size: small;
+    }
 }
 
-li {
-    list-style: none;
-}
-
-footer {
-    background-color: $color-footer;
-    color: $color-texto-secundario;
-}
