@@ -32,7 +32,7 @@
         </button>
     </div>
     <div class="row border-bottom">
-        <div class="col-12 order-3 col-sm-12 col-md-12 order-md-3 order-lg-1 col-lg-4 col-xl-4 col-xxl-4 d-flex align-items-center justify-content-center">
+        <div class="col-12 order-3 col-sm-12 col-md-12 order-md-3 order-lg-1 col-lg-4 col-xl-4 col-xxl-4 mb-md-2 mb-sm-2 d-flex align-items-center justify-content-center">
             <form role="search" class="d-flex flex-row">
                 <input class="form-control md-2" type="search" placeholder="Buscar..." aria-label="Buscar">
                 <button class="btn btn-outline-success" type="submit">Buscar</button>
@@ -107,328 +107,330 @@
             </div> 
         </nav>
     </div>
-    <h1 class="text-center">TIENDA</h1>
-    <div class="row">
-        <div class="d-none d-sm-none d-md-block col-md-3 col-lg-2 navigation-tienda">
-            <nav class="" aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item ms-4"><a href="../index.html">Inicio</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Tienda</li>
-                </ol>
-            </nav>
-            <nav>
-                <ul>
-                    <li>
-                        <button type="button" class="btn btn-link navigation-tienda" data-bs-toggle="modal" data-bs-target="#modalPollos">
-                            Pollos
-                        </button>
-                        <div class="modal fade" id="modalPollos" tabindex="-1" aria-labelledby="modalLabelPollos" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="modalLabelPollos">AVISO!</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        Pronto podras visitar la página de Pollos.
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <button type="button" class="btn btn-link navigation-tienda" data-bs-toggle="modal" data-bs-target="#modalPrefritos">
-                            Prefritos
-                        </button>
-                        <div class="modal fade" id="modalPrefritos" tabindex="-1" aria-labelledby="modalLabelPrefritos" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="modalLabelPrefritos">AVISO!</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        Pronto podras visitar la página de Prefritos.
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+    <main>
+        <h1 class="text-center">TIENDA</h1>
+        <div class="row">
+            <div class="d-none d-sm-none d-md-block col-md-3 col-lg-2 navigation-tienda">
+                <nav class="" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item ms-4"><a href="../index.html">Inicio</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Tienda</li>
+                    </ol>
+                </nav>
+                <nav>
+                    <ul>
+                        <li>
+                            <button type="button" class="btn btn-link navigation-tienda" data-bs-toggle="modal" data-bs-target="#modalPollos">
+                                <span>Pollos</span>
+                            </button>
+                            <div class="modal fade" id="modalPollos" tabindex="-1" aria-labelledby="modalLabelPollos" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="modalLabelPollos">AVISO!</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <span>Pronto podras visitar la página de Pollos.</span>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <button type="button" class="btn btn-link navigation-tienda" data-bs-toggle="modal" data-bs-target="#modalHuevos">
-                            Huevos - Pan
-                        </button>
-                        <div class="modal fade" id="modalHuevos" tabindex="-1" aria-labelledby="modalLabelHuevos" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="modalLabelHuevos">AVISO!</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        Pronto podras visitar la página de Huevos y Panes.
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-link navigation-tienda" data-bs-toggle="modal" data-bs-target="#modalPrefritos">
+                                <span>Prefritos</span>
+                            </button>
+                            <div class="modal fade" id="modalPrefritos" tabindex="-1" aria-labelledby="modalLabelPrefritos" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="modalLabelPrefritos">AVISO!</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <span>Pronto podras visitar la página de Prefritos.</span>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-link navigation-tienda" data-bs-toggle="modal" data-bs-target="#modalHuevos">
+                                <span>Huevos - Pan</span>
+                            </button>
+                            <div class="modal fade" id="modalHuevos" tabindex="-1" aria-labelledby="modalLabelHuevos" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="modalLabelHuevos">AVISO!</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <span>Pronto podras visitar la página de Huevos y Panes.</span>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-9 col-lg-10 d-none d-sm-none d-md-none d-lg-block">
+                <div class="row mb-3">
+                    <div class="d-flex justify-content-evenly">
+                        <div class="card text-center" style="width: 10rem;">
+                            <img src="../assets/hamburguesas-gta-x-1-kg.jpg"  class="card-img-top" alt="Imagen del producto Hamburguesas">
+                            <div class="card-body">
+                                <h3 class="card-title">HAMBURGUESA x 1KG.</h3>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
                         </div>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="col-md-9 col-lg-10 d-none d-sm-none d-md-none d-lg-block">
-            <div class="row mb-3">
-                <div class="d-flex justify-content-evenly">
-                    <div class="card text-center" style="width: 10rem;">
-                        <img src="../assets/hamburguesas-gta-x-1-kg.jpg"  class="card-img-top" alt="Imagen del producto Hamburguesas">
-                        <div class="card-body">
-                            <h3 class="card-title">HAMBURGUESA x 1KG.</h3>
-                            <a href="#" class="btn btn-primary">Agregar</a>
+                        <div class="card text-center" style="width: 10rem;">
+                            <div class="img-hover-wrap">
+                                <img src="../assets/nuggets-x-1kg (2).jpg"  class="card-img-top img-normal" alt="Imagen principal del producto Nuggets"> <!--VER FUNCIONALIDAD DE HOVER-->
+                                <img src="../assets/nugget-x-1kg-(1).jpg"  class="card-img-top img-hover" alt="Imagen secundaria del producto Nuggets">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">NUGGETS DE POLLO x 1KG.</h3>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+                        <div class="card text-center" style="width: 10rem;">
+                            <div class="img-hover-wrap">
+                                <img src="../assets/milanesa-x-1kg (1).png"  class="card-img-top img-normal" alt="Imagen principal del producto Milanesas"> <!--VER FUNCIONALIDAD DE HOVER-->
+                                <img src="../assets/milanesa-x-1kg (2).jpg" class="card-img-top img-hover" alt="Imagen secundaria del producto Milanesas">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">PACK MILANESA x 1KG.</h3>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+                        <div class="card text-center" style="width: 10rem;">
+                            <img src="../assets/maple-30u.jpg"  class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">MAPPLE DE HUEVOS x 30UN.</h3>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="card text-center" style="width: 10rem;">
-                        <div class="img-hover-wrap">
-                            <img src="../assets/nuggets-x-1kg (2).jpg"  class="card-img-top img-normal" alt="Imagen principal del producto Nuggets"> <!--VER FUNCIONALIDAD DE HOVER-->
-                            <img src="../assets/nugget-x-1kg-(1).jpg"  class="card-img-top img-hover" alt="Imagen secundaria del producto Nuggets">
+                </div>
+                <div class="row mb-3">
+                    <div class="d-flex justify-content-evenly">
+                        <div class="card text-center" style="width: 10rem;">
+                            <img src="../assets/ricosaurio-x-1kg.jpg"  class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title mb-4">RICOSAURIOS x 1KG.</h3>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h3 class="card-title">NUGGETS DE POLLO x 1KG.</h3>
-                            <a href="#" class="btn btn-primary">Agregar</a>
+                        <div class="card text-center" style="width: 10rem;">
+                            <div class="img-hover-wrap">
+                                <img src="../assets/nuggets-x-1kg (2).jpg"  class="card-img-top img-normal" alt="Imagen principal del producto Nuggets">
+                                <img src="../assets/nugget-x-1kg-(1).jpg"  class="card-img-top img-hover" alt="Imagen secundaria del producto Nuggets">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">NUGGETS DE POLLO x 5KG.</h3>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card text-center" style="width: 10rem;">
-                        <div class="img-hover-wrap">
-                            <img src="../assets/milanesa-x-1kg (1).png"  class="card-img-top img-normal" alt="Imagen principal del producto Milanesas"> <!--VER FUNCIONALIDAD DE HOVER-->
-                            <img src="../assets/milanesa-x-1kg (2).jpg" class="card-img-top img-hover" alt="Imagen secundaria del producto Milanesas">
+                        <div class="card text-center" style="width: 10rem;">
+                            <img src="../assets/pochoclo-x-1kg.jpg"  class="card-img-top" alt="Imagen del producto Pochoclos">
+                            <div class="card-body">
+                                <h3 class="card-title">BOLSA POCHOCLOS x 1KG.</h3>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h3 class="card-title">PACK MILANESA x 1KG.</h3>
-                            <a href="#" class="btn btn-primary">Agregar</a>
-                        </div>
-                    </div>
-                    <div class="card text-center" style="width: 10rem;">
-                        <img src="../assets/hamburguesas-gta-x-1-kg.jpg"  class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h3 class="card-title">HAMBURGUESA x 1KG.</h3>
-                            <a href="#" class="btn btn-primary">Agregar</a>
+                        <div class="card text-center" style="width: 10rem;">
+                            <img src="../assets/rabas-pampa-food.jpg"  class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">RABAS PAMPA FOOD x 1KG.</h3>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row mb-3">
-                <div class="d-flex justify-content-evenly">
-                    <div class="card text-center" style="width: 10rem;">
-                        <img src="../assets/hamburguesas-gta-x-1-kg.jpg"  class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h3 class="card-title">HAMBURGUESA x 1KG.</h3>
-                            <a href="#" class="btn btn-primary">Agregar</a>
+            <div class="col-md-9 col-lg-9 d-none d-sm-none d-md-block d-lg-none">
+                <div class="row mb-3">
+                    <div class="d-flex justify-content-evenly">
+                        <div class="card text-center" style="width: 10rem;">
+                            <img src="../assets/hamburguesas-gta-x-1-kg.jpg"  class="card-img-top" alt="Imagen del producto Hamburguesas">
+                            <div class="card-body">
+                                <h3 class="card-title">HAMBURGUESA x 1KG.</h3>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card text-center" style="width: 10rem;">
-                        <div class="img-hover-wrap">
-                            <img src="../assets/nuggets-x-1kg (2).jpg"  class="card-img-top img-normal" alt="Imagen principal del producto Nuggets">
-                            <img src="../assets/nugget-x-1kg-(1).jpg"  class="card-img-top img-hover" alt="Imagen secundaria del producto Nuggets">
+                        <div class="card text-center" style="width: 10rem;">
+                            <div class="img-hover-wrap">
+                                <img src="../assets/nuggets-x-1kg (2).jpg"  class="card-img-top img-normal" alt="Imagen principal del producto Nuggets"> <!--VER FUNCIONALIDAD DE HOVER-->
+                                <img src="../assets/nugget-x-1kg-(1).jpg"  class="card-img-top img-hover" alt="Imagen secundaria del producto Nuggets">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">NUGGETS DE POLLO x 1KG.</h3>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h3 class="card-title">NUGGETS DE POLLO x 5KG.</h3>
-                            <a href="#" class="btn btn-primary">Agregar</a>
-                        </div>
-                    </div>
-                    <div class="card text-center" style="width: 10rem;">
-                        <img src="../assets/pochoclo-x-1kg.jpg"  class="card-img-top" alt="Imagen del producto Pochoclos">
-                        <div class="card-body">
-                            <h3 class="card-title">BOLSA POCHOCLOS x 1KG.</h3>
-                            <a href="#" class="btn btn-primary">Agregar</a>
-                        </div>
-                    </div>
-                    <div class="card text-center" style="width: 10rem;">
-                        <img src="../assets/hamburguesas-gta-x-1-kg.jpg"  class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h3 class="card-title">HAMBURGUESA x 1KG.</h3>
-                            <a href="#" class="btn btn-primary">Agregar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-9 col-lg-9 d-none d-sm-none d-md-block d-lg-none">
-            <div class="row mb-3">
-                <div class="d-flex justify-content-evenly">
-                    <div class="card text-center" style="width: 10rem;">
-                        <img src="../assets/hamburguesas-gta-x-1-kg.jpg"  class="card-img-top" alt="Imagen del producto Hamburguesas">
-                        <div class="card-body">
-                            <h3 class="card-title">HAMBURGUESA x 1KG.</h3>
-                            <a href="#" class="btn btn-primary">Agregar</a>
-                        </div>
-                    </div>
-                    <div class="card text-center" style="width: 10rem;">
-                        <div class="img-hover-wrap">
-                            <img src="../assets/nuggets-x-1kg (2).jpg"  class="card-img-top img-normal" alt="Imagen principal del producto Nuggets"> <!--VER FUNCIONALIDAD DE HOVER-->
-                            <img src="../assets/nugget-x-1kg-(1).jpg"  class="card-img-top img-hover" alt="Imagen secundaria del producto Nuggets">
-                        </div>
-                        <div class="card-body">
-                            <h3 class="card-title">NUGGETS DE POLLO x 1KG.</h3>
-                            <a href="#" class="btn btn-primary">Agregar</a>
-                        </div>
-                    </div>
-                    <div class="card text-center" style="width: 10rem;">
-                        <div class="img-hover-wrap">
-                            <img src="../assets/milanesa-x-1kg (1).png"  class="card-img-top img-normal" alt="Imagen principal del producto Milanesas"> <!--VER FUNCIONALIDAD DE HOVER-->
-                            <img src="../assets/milanesa-x-1kg (2).jpg" class="card-img-top img-hover" alt="Imagen secundaria del producto Milanesas">
-                        </div>
-                        <div class="card-body">
-                            <h3 class="card-title">PACK MILANESA x 1KG.</h3>
-                            <a href="#" class="btn btn-primary">Agregar</a>
+                        <div class="card text-center" style="width: 10rem;">
+                            <div class="img-hover-wrap">
+                                <img src="../assets/milanesa-x-1kg (1).png"  class="card-img-top img-normal" alt="Imagen principal del producto Milanesas"> <!--VER FUNCIONALIDAD DE HOVER-->
+                                <img src="../assets/milanesa-x-1kg (2).jpg" class="card-img-top img-hover" alt="Imagen secundaria del producto Milanesas">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">PACK MILANESA x 1KG.</h3>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row mb-3">
-                <div class="d-flex justify-content-evenly">
-                    <div class="card text-center" style="width: 10rem;">
-                        <img src="../assets/hamburguesas-gta-x-1-kg.jpg"  class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h3 class="card-title">HAMBURGUESA x 1KG.</h3>
-                            <a href="#" class="btn btn-primary">Agregar</a>
+                <div class="row mb-3">
+                    <div class="d-flex justify-content-evenly">
+                        <div class="card text-center" style="width: 10rem;">
+                            <img src="../assets/maple-30u.jpg"  class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">MAPLE DE HUEVOS x 30UN.</h3>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card text-center" style="width: 10rem;">
-                        <img src="../assets/hamburguesas-gta-x-1-kg.jpg"  class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h3 class="card-title">HAMBURGUESA x 1KG.</h3>
-                            <a href="#" class="btn btn-primary">Agregar</a>
+                        <div class="card text-center" style="width: 10rem;">
+                            <img src="../assets/ricosaurio-x-1kg.jpg"  class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title mb-4">RICOSAURIOS x 1KG.</h3>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card text-center" style="width: 10rem;">
-                        <div class="img-hover-wrap">
-                            <img src="../assets/nuggets-x-1kg (2).jpg"  class="card-img-top img-normal" alt="Imagen principal del producto Nuggets">
-                            <img src="../assets/nugget-x-1kg-(1).jpg"  class="card-img-top img-hover" alt="Imagen secundaria del producto Nuggets">
+                        <div class="card text-center" style="width: 10rem;">
+                            <div class="img-hover-wrap">
+                                <img src="../assets/nuggets-x-1kg (2).jpg"  class="card-img-top img-normal" alt="Imagen principal del producto Nuggets">
+                                <img src="../assets/nugget-x-1kg-(1).jpg"  class="card-img-top img-hover" alt="Imagen secundaria del producto Nuggets">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">NUGGETS DE POLLO x 5KG.</h3>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h3 class="card-title">NUGGETS DE POLLO x 5KG.</h3>
-                            <a href="#" class="btn btn-primary">Agregar</a>
-                        </div>
-                    </div>
+                    </div>    
                 </div>    
-            </div>    
-            <div class="row mb-3">
-                <div class="d-flex justify-content-evenly">
-                    <div class="card text-center" style="width: 10rem;">
-                        <img src="../assets/pochoclo-x-1kg.jpg"  class="card-img-top" alt="Imagen del producto Pochoclos">
-                        <div class="card-body">
-                            <h3 class="card-title">BOLSA POCHOCLOS x 1KG.</h3>
-                            <a href="#" class="btn btn-primary">Agregar</a>
+                <div class="row mb-3">
+                    <div class="d-flex justify-content-evenly">
+                        <div class="card text-center" style="width: 10rem;">
+                            <img src="../assets/pochoclo-x-1kg.jpg"  class="card-img-top" alt="Imagen del producto Pochoclos">
+                            <div class="card-body">
+                                <h3 class="card-title">BOLSA POCHOCLOS x 1KG.</h3>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card text-center" style="width: 10rem;">
-                        <img src="../assets/hamburguesas-gta-x-1-kg.jpg"  class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h3 class="card-title">HAMBURGUESA x 1KG.</h3>
-                            <a href="#" class="btn btn-primary">Agregar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-9 col-lg-9 d-sm-block d-md-none d-lg-none">
-            <div class="row mb-3">
-                <div class="d-flex justify-content-evenly">
-                    <div class="card text-center" style="width: 10rem;">
-                        <img src="../assets/hamburguesas-gta-x-1-kg.jpg"  class="card-img-top" alt="Imagen del producto Hamburguesas">
-                        <div class="card-body">
-                            <h3 class="card-title">HAMBURGUESA x 1KG.</h3>
-                            <a href="#" class="btn btn-primary">Agregar</a>
-                        </div>
-                    </div>
-                    <div class="card text-center" style="width: 10rem;">
-                        <div class="img-hover-wrap">
-                            <img src="../assets/nuggets-x-1kg (2).jpg"  class="card-img-top img-normal" alt="Imagen principal del producto Nuggets"> <!--VER FUNCIONALIDAD DE HOVER-->
-                            <img src="../assets/nugget-x-1kg-(1).jpg"  class="card-img-top img-hover" alt="Imagen secundaria del producto Nuggets">
-                        </div>
-                        <div class="card-body">
-                            <h3 class="card-title">NUGGETS DE POLLO x 1KG.</h3>
-                            <a href="#" class="btn btn-primary">Agregar</a>
+                        <div class="card text-center" style="width: 10rem;">
+                            <img src="../assets/rabas-pampa-food.jpg"  class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">RABAS PAMPA FOOD x 1KG.</h3>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row mb-3">
-                <div class="d-flex justify-content-evenly">
-                    <div class="card text-center" style="width: 10rem;">
-                        <div class="img-hover-wrap">
-                            <img src="../assets/milanesa-x-1kg (1).png"  class="card-img-top img-normal" alt="Imagen principal del producto Milanesas"> <!--VER FUNCIONALIDAD DE HOVER-->
-                            <img src="../assets/milanesa-x-1kg (2).jpg" class="card-img-top img-hover" alt="Imagen secundaria del producto Milanesas">
+            <div class="col-md-9 col-lg-9 d-sm-block d-md-none d-lg-none">
+                <div class="row mb-3">
+                    <div class="d-flex justify-content-evenly">
+                        <div class="card text-center" style="width: 10rem;">
+                            <img src="../assets/hamburguesas-gta-x-1-kg.jpg"  class="card-img-top" alt="Imagen del producto Hamburguesas">
+                            <div class="card-body">
+                                <h3 class="card-title">HAMBURGUESA x 1KG.</h3>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h3 class="card-title">PACK MILANESA x 1KG.</h3>
-                            <a href="#" class="btn btn-primary">Agregar</a>
-                        </div>
-                    </div>
-                    <div class="card text-center" style="width: 10rem;">
-                        <img src="../assets/hamburguesas-gta-x-1-kg.jpg"  class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h3 class="card-title">HAMBURGUESA x 1KG.</h3>
-                            <a href="#" class="btn btn-primary">Agregar</a>
+                        <div class="card text-center" style="width: 10rem;">
+                            <div class="img-hover-wrap">
+                                <img src="../assets/nuggets-x-1kg (2).jpg"  class="card-img-top img-normal" alt="Imagen principal del producto Nuggets"> <!--VER FUNCIONALIDAD DE HOVER-->
+                                <img src="../assets/nugget-x-1kg-(1).jpg"  class="card-img-top img-hover" alt="Imagen secundaria del producto Nuggets">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">NUGGETS DE POLLO x 1KG.</h3>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row mb-3">
-                <div class="d-flex justify-content-evenly">
-                    <div class="card text-center" style="width: 10rem;">
-                        <img src="../assets/hamburguesas-gta-x-1-kg.jpg"  class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h3 class="card-title">HAMBURGUESA x 1KG.</h3>
-                            <a href="#" class="btn btn-primary">Agregar</a>
+                <div class="row mb-3">
+                    <div class="d-flex justify-content-evenly">
+                        <div class="card text-center" style="width: 10rem;">
+                            <div class="img-hover-wrap">
+                                <img src="../assets/milanesa-x-1kg (1).png"  class="card-img-top img-normal" alt="Imagen principal del producto Milanesas"> <!--VER FUNCIONALIDAD DE HOVER-->
+                                <img src="../assets/milanesa-x-1kg (2).jpg" class="card-img-top img-hover" alt="Imagen secundaria del producto Milanesas">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">PACK MILANESA x 1KG.</h3>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+                        <div class="card text-center" style="width: 10rem;">
+                            <img src="../assets/maple-30u.jpg"  class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">MAPPLE DE HUEVOS x 30UN.</h3>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="card text-center" style="width: 10rem;">
-                        <div class="img-hover-wrap">
-                            <img src="../assets/nuggets-x-1kg (2).jpg"  class="card-img-top img-normal" alt="Imagen principal del producto Nuggets">
-                            <img src="../assets/nugget-x-1kg-(1).jpg"  class="card-img-top img-hover" alt="Imagen secundaria del producto Nuggets">
+                </div>
+                <div class="row mb-3">
+                    <div class="d-flex justify-content-evenly">
+                        <div class="card text-center" style="width: 10rem;">
+                            <img src="../assets/ricosaurio-x-1kg.jpg"  class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title mb-4">RICOSAURIOS x 1KG.</h3>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h3 class="card-title">NUGGETS DE POLLO x 5KG.</h3>
-                            <a href="#" class="btn btn-primary">Agregar</a>
+                        <div class="card text-center" style="width: 10rem;">
+                            <div class="img-hover-wrap">
+                                <img src="../assets/nuggets-x-1kg (2).jpg"  class="card-img-top img-normal" alt="Imagen principal del producto Nuggets">
+                                <img src="../assets/nugget-x-1kg-(1).jpg"  class="card-img-top img-hover" alt="Imagen secundaria del producto Nuggets">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">NUGGETS DE POLLO x 5KG.</h3>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
                         </div>
-                    </div>
+                    </div>    
                 </div>    
-            </div>    
-            <div class="row mb-3">
-                <div class="d-flex justify-content-evenly">
-                    <div class="card text-center" style="width: 10rem;">
-                        <img src="../assets/pochoclo-x-1kg.jpg"  class="card-img-top" alt="Imagen del producto Pochoclos">
-                        <div class="card-body">
-                            <h3 class="card-title">BOLSA POCHOCLOS x 1KG.</h3>
-                            <a href="#" class="btn btn-primary">Agregar</a>
+                <div class="row mb-3">
+                    <div class="d-flex justify-content-evenly">
+                        <div class="card text-center" style="width: 10rem;">
+                            <img src="../assets/pochoclo-x-1kg.jpg"  class="card-img-top" alt="Imagen del producto Pochoclos">
+                            <div class="card-body">
+                                <h3 class="card-title">BOLSA POCHOCLOS x 1KG.</h3>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card text-center" style="width: 10rem;">
-                        <img src="../assets/hamburguesas-gta-x-1-kg.jpg"  class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h3 class="card-title">HAMBURGUESA x 1KG.</h3>
-                            <a href="#" class="btn btn-primary">Agregar</a>
+                        <div class="card text-center" style="width: 10rem;">
+                            <img src="../assets/rabas-pampa-food.jpg"  class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">RABAS PAMPA FOOD x 1KG.</h3>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
     <footer class="mt-2">
         <div class="row">
             <div class="col-12 d-flex justify-content-center">
                 <p class="mt-2">Todos los derechos reservados</p>
             </div>
-            <div class="col-12 d-flex justify-content-center">
-                <p class="me-2 mt-2">Contactate</p>
+            <div class="col-12 d-flex justify-content-center mb-2">
+                <p class="me-2 mt-3">Contactate</p>
                 <form role="send" class="d-flex flex-row">
                     <input class="form-control md-2" type="send" placeholder="Email" aria-label="Enviar">
                     <button class="btn btn-outline-primary ms-2" type="button">Enviar</button>

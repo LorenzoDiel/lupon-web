@@ -31,22 +31,22 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <div class="row border-bottom">
-        <div class="col-12 order-3 col-sm-12 col-md-12 order-md-3 order-lg-1 col-lg-4 col-xl-4 col-xxl-4 d-flex align-items-center justify-content-center">
+    <div class="row border-bottom m-0">
+        <div class="col-12 order-3 col-sm-12 col-md-12 order-md-3 order-lg-1 col-lg-4 col-xl-4 col-xxl-4 p-0s mb-md-2 mb-sm-2 d-flex align-items-center justify-content-center">
             <form role="search" class="d-flex flex-row">
                 <input class="form-control md-2" type="search" placeholder="Buscar..." aria-label="Buscar">
                 <button class="btn btn-outline-success" type="submit">Buscar</button>
             </form>
         </div>    
-        <div class="logo col-6 order-1 col-sm-6 order-md-1 col-md-6 order-lg-2 col-lg-4 col-xl-4 col-xxl-4 d-flex align-items-center justify-content-center">
+        <div class="logo col-6 order-1 col-sm-6 order-md-1 col-md-6 order-lg-2 col-lg-4 col-xl-4 col-xxl-4 p-0 d-flex align-items-center justify-content-center">
             <a href="../index.html"><img src="../assets/logo.jpg" height="100" width="100" class="logo-lupon" alt="Logo de marca Lupon Express"></a>
         </div>
-        <div class="col-6 order-2 col-sm-6 col-md-6 order-md-2 order-lg-3 col-lg-4 col-xl-4 col-xxl-4 d-flex align-items-center justify-content-end">
+        <div class="col-6 order-2 col-sm-6 col-md-6 order-md-2 order-lg-3 col-lg-4 col-xl-4 col-xxl-4 p-0 d-flex align-items-center justify-content-end">
             <button type="button" class="btn btn-secondary me-2" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Pagina en construcción.">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                     <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
                     <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-                  </svg>
+                </svg>
             </button>
             <button class="btn btn-primary me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
@@ -55,11 +55,11 @@
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header">
-                  <h2 class="offcanvas-title" id="offcanvasRightLabel">Carrito de Compras</h2>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <h2 class="offcanvas-title" id="offcanvasRightLabel">Carrito de Compras</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                    El carrito esta vacío
+                    <span>El carrito esta vacío</span>
                 </div>
             </div>
         </div>
@@ -107,44 +107,46 @@
             </div> 
         </nav>
     </div>
-    <h1 class="text-center">CONTACTO</h1>
-    <div class="row">
-        <div class="col-6 col-lg-6 order-1 justify-content-center d-flex">
-            <h2>ZONA DE REPARTO</h2>
-        </div>    
-        <div class="col-6 col-lg-6 order-2 justify-content-center d-flex  ">
-            <h2>ESCRIBINOS</h2>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-6 col-sm-6 col-md-6 col-lg-6 order-3 d-flex justify-content-center">
-            <div>
-                <img src="../assets/mapa-reparto.jpg" alt="Mapa delimitado de reparto" class="img-mapa" width="500px" height="500px">
-            </div>
-        </div>
-        <div class="col-6 col-sm-6 col-md-6 col-lg-6 order-4 d-flex">
-            <div class="row align-items-start align-content-start">
-                <div class="col-12">
-                    <img src="../assets/wsp.png" width="50px" height="50px" class="img-contactos" alt="Logo WhatsApp">22312345678
-                </div>
-                <div class="col-12 ">
-                    <img src="../assets/fb.png" width="40px" height="40px" class="img-fb" alt="Logo Facebook"> LUPON EXPRESS
-                </div>
-                <div class="col-12">
-                    <img src="../assets/ig.png" width="50px" height="50px" class="img-contactos" alt="Logo Instagram"> @LUPON_EXPRESS
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer class="mt-2">
+    <main>
+        <h1 class="text-center">CONTACTO</h1>
         <div class="row">
+            <div class="col-6 col-lg-6 order-1 justify-content-center d-flex">
+                <h2>ZONA DE REPARTO</h2>
+            </div>    
+            <div class="col-6 col-lg-6 order-2 justify-content-center d-flex">
+                <h2>ESCRIBINOS</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-0 order-3 d-flex justify-content-center">
+                <div>
+                    <img src="../assets/mapa-reparto.jpg" alt="Mapa delimitado de reparto" class="img-mapa" width="500px" height="500px">
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-0 order-4 d-flex align-items-start">
+                <div class="row m-0 w-100">
+                    <div class="col-12 col-md-12 col-lg-12 col-xl-12 d-flex align-items-center justify-content-center">
+                        <img src="../assets/wsp.png" width="50px" height="50px" class="img-contactos" alt="Logo WhatsApp"> <span>22312345678</span>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center">
+                        <img src="../assets/fb.png" width="48px" height="50px" class="img-fb" alt="Logo Facebook"> <span>LUPON EXPRESS</span>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center">
+                        <img src="../assets/ig.png" width="50px" height="50px" class="img-contactos" alt="Logo Instagram"> <span>@LUPON_EXPRESS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="mt-2">
+        <div class="row me-0 w-100">
             <div class="col-12 d-flex justify-content-center">
                 <p class="mt-2">Todos los derechos reservados</p>
             </div>
-            <div class="col-12 d-flex justify-content-center">
-                <p class="me-2 mt-2">Contactate</p>
+            <div class="col-12 d-flex justify-content-center mb-2 p-0">
+                <p class="me-2 mt-3">Contactate</p>
                 <form role="send" class="d-flex flex-row">
-                    <input class="form-control md-2" type="send" placeholder="Email" aria-label="Enviar">
+                    <input class="form-control" type="send" placeholder="Email" aria-label="Enviar">
                     <button class="btn btn-outline-primary ms-2" type="button">Enviar</button>
                 </form>
             </div>
