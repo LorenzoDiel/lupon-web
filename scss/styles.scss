@@ -1,122 +1,425 @@
 @use "mixins" as *;
 @use "variables" as *;
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Special+Gothic+Expanded+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+@font-face {
+    font-family: "Gladiola";
+    src: url("../fonts/Gladiola.woff2") format("woff2"),
+         url("../fonts/Gladiola.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+}
 
 html,body {
+    padding-top: calc(60px + env(safe-area-inset-top));
+    background-image: url("../assets/fondo-blanco.jpg");
+    background-size: auto;
+    background-position: center;
     height: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
-}
-main {
-    flex: 1;
-}
-
-p.titulo-card{
-    font-size: small;
-    font-weight: bolder;
+    @media (max-width: 768px) {
+        padding-top: calc(60px + env(safe-area-inset-top));
+    }
 }
 
-h1 {
-    font-family: $font-h1;
-}
-
-h2 {
-    font-family: $font-h2;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.5);
-  background-size: 100% 100%;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  top: 50%;
-}
-
-li {
-    list-style: none;
-}
-
-footer {
-    background-color: $color-footer;
-    color: $color-texto-secundario;
-}
-
-.img-hover-wrap {
-    position: relative;
-    width: 100%;
-    height: auto;
-}
-
-.img-hover-wrap img {
-    width: 100%;
-    display: block;
-    transition: opacity 0.3s ease;
-  }
-  
-.img-hover {
-    position: absolute;
+header {
+    position: fixed;
     top: 0;
     left: 0;
-    opacity: 0;
-  }
-  
-.img-hover-wrap:hover .img-hover {
-    opacity: 1;
-  }
-  
-.img-hover-wrap:hover .img-normal {
-    opacity: 0;
-  }
+    right: 0;
+    padding-top: constant(safe-area-inset-top);
+    padding-top: env(safe-area-inset-top);
+    z-index: 1000;
+    height: calc(60px + env(safe-area-inset-top));
+    box-sizing: border-box;
 
-h3 {
-    font-size: small;
 }
 
-.img-marca {
-    height: 50px;
-    width: 50px;
-}
-
-@media (max-width:767.99px) {
-    .img-user,
-    .img-cart {
-        width: 30px;
-        height: 30px;
-    }
-    .logo-lupon {
-        width: 50px;
-        height: 50px;
-    }
-    h1 {
-        font-size: medium;
-    }
-    h2 {
-        font-size: medium;
-    }
-    .img-contactos {
-        width: 30px;
-        height: 30px;
-    }
-    .img-fb { 
-        width: 25px;
-        height: 25px;
-    }
-    .img-mapa {
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-    .img-mapa {
-        width: 100%;
-        height: auto;
-    }
-    .navigation-tienda {
+.carousel-info{
+    -webkit-backdrop-filter: blur(10px) saturate(120%);
+    backdrop-filter: blur(10px) saturate(120%);
+    background: linear-gradient(180degm, rgba(8, 8, 8, 0.90) 0%, rgba(8, 8, 8, 0.80) 100%);
+    box-shadow: 0 8px 30px rgba(8, 10, 15, 0.80);
+    will-change: backdrop-filter;
+    height: 40px;
+    font-family: "Anton", serif;
+    font-size: 1.2rem;
+    @include flex-center;
+    @media (max-width: 768px) {
         font-size: small;
     }
 }
 
+// Navegación
+
+nav{
+    -webkit-backdrop-filter: blur(10px) saturate(120%);
+    backdrop-filter: blur(10px) saturate(120%);
+    background: linear-gradient(180degm, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.06) 100%);
+    box-shadow: 0 8px 30px rgba(8, 10, 15, 0.12);
+    will-change: backdrop-filter;
+}
+
+.navbar-nav a:hover {
+    color: darken($color-principal, 20%);
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-collapse{
+    justify-content: flex-end;
+}
+
+.navbar-nav{
+    gap: 1rem;
+    font-family: "Anton", sans-serif;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+.logo {
+    margin-left: 15px;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+// Secciones principales
+
+#index, #offers, #us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1px 16px 10px 16px;
+    height: 80vh;
+    background-image: url("../assets/fondo-marca-horizontal.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    scroll-margin-top: 125px;
+    @media (max-width:768px) {
+        background-image: url("../assets/fondo-marca-vertical.png");
+        margin: 5px 5px 10px 5px;
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+}
+
+#clients {
+    margin: 5px 16px 10px 16px;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    scroll-margin-top: 125px;
+}
+
+footer {
+    background-color: #000000;
+    color: $color-secundario;
+    text-align: center;
+    padding: 10px 0;
+    @media (max-width:768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+// Section Ofertas
+
+.controls-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 5px;
+}
+
+.offers-category-title {
+    font-family: "Anton", sans-serif;
+    font-size: 1.5rem;
+    color: $color-principal;
+    margin: 0 1rem;
+    user-select: none;
+}
+
+.carousel-btn {
+    background: none;
+    border: none;
+  cursor: pointer;
+}
+
+#prevBtn, #nextBtn {
+    font-size: 1.5rem;
+    color: $color-principal;
+    transition: transform 0.2s ease-in-out;
+}
+
+#prevBtn:hover, #nextBtn:hover {
+    color: darken($color-principal, 20%);
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.container-offers {
+  width: 100%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  overflow-x: hidden;
+  height: 50vh;
+  @media (min-width: 1400px) {
+    overflow: hidden;
+  }
+}
+
+.clients.row, .offers-category.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.container-offers::-webkit-scrollbar {
+  display: none;
+}
+
+// Section Clientes
+
+.clients {
+    height: 60vh;
+}
+
+.clients-column{
+    padding: 0;
+}
+
+.clientes-column--testimonials{
+    border-left: 2px dashed rgba(0, 0, 0, 1);
+    @media (max-width:768px) {
+        border-left: none;   
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.card {
+    background-color: transparent;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.card-img-top {
+    width: 50%;
+    border-radius: 10px;
+    object-fit: cover;
+    @media (min-width:1400px) {
+        width: 30%;
+    }
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.card-title {
+    font-family: "Anton", sans-serif;
+    font-size: 2rem;
+    color: $color-principal;
+}
+
+.card-text {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.2rem;
+    max-width: fit-content;
+    font-weight: bolder;
+    color: $color-gris;
+}
+
+.card-btn {
+    margin-top: auto;
+    padding: 8px 30px 8px 30px;
+    background-color: $color-whatsapp;
+    color: $color-principal;
+    border: none;
+    border-radius: 25px;
+    font-family: "Anton", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    
+    &:hover {
+        background-color: darken($color-whatsapp, 10%);
+        color: $color-secundario;
+    }
+
+    &:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 4px rgba(37,211,102,0.14);
+    }
+}
+
+#container-info {
+    margin: 10px 5px 0 5px;
+    padding: 2px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+#container-clients {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+ul li {
+    font-family: "Nunito", sans-serif;
+    color: $color-gris;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    list-style: none;
+}
+
+#client-name {
+    font-family: "Anton", sans-serif;
+    color: $color-principal;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+#client-review {
+    font-family: "Nunito", sans-serif;
+    color: $color-gris;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-top: 5px;
+}
+
+.brand-icon {
+    width: 100px;
+    height: 100px;
+}
+
+// Fuentes y estilos de texto
+
+.title {
+    font-family: "Anton", sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    color: $color-principal;
+    @media (max-width:768px) {
+        font-size: 1.5rem;
+    }
+
+}
+
+.title-gladiola {
+    color: $color-principal;
+    font-family: "Gladiola";
+    -webkit-text-stroke: 1.5px $color-secundario;
+    -webkit-text-fill-color: $color-principal;
+    font-size: 10rem;
+    @media (max-width: 768px) {
+        font-size: 7rem;
+    }
+}
+
+.title-gladiola-2 {
+    color: $color-principal;
+    font-family: "Gladiola";
+    -webkit-text-stroke: 1px $color-secundario;
+    -webkit-text-fill-color: $color-principal;
+    font-size: 4rem;
+    @media (max-width: 768px) {
+        font-size: 2.5rem;
+    }
+}
+
+.title-anton {
+    font-family: "Anton", sans-serif;
+    color: $color-principal;
+    font-size: 3rem;
+    -webkit-text-stroke: 1px $color-secundario;
+    -webkit-text-fill-color: $color-principal;
+}
+
+.subtext {
+    font-family: "Anton", sans-serif;
+    color: $color-principal;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.subtext-1 {
+    font-family: "Nunito", sans-serif;
+    color: $color-principal;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.subtext-2 {
+    font-family: "Nunito", sans-serif;
+    color: $color-principal;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: $color-gris;
+    @media (max-width: 768px) {
+        font-size: 0.8rem;
+    }
+}
+
+.btn-whatsapp {
+    font-family: "Anton", sans-serif;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    background-color: $color-whatsapp;
+    color: $color-principal;
+    font-weight: bold;
+    padding: 8px 16px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    
+    &:hover {
+        background-color: darken($color-whatsapp, 10%);
+        color: $color-secundario;
+    }
+
+    &:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 4px rgba(37,211,102,0.14);
+    }
+}
+
+footer .subtext-2 {
+    font-family: "Nunito", sans-serif;
+    color: $color-secundario;
+    font-size: 1rem;
+    font-weight: normal;
+}
