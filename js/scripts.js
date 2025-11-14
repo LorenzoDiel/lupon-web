@@ -1,4 +1,4 @@
-export function offersCarousel() {
+function offersCarousel() {
   const container = document.querySelector('.container-offers');
   const categories = container ? Array.from(container.querySelectorAll('.offers-category')) : [];
   if (!container || categories.length === 0) return;
@@ -132,6 +132,10 @@ function updateTitles(index){
   return { next: nextCategory, prev: prevCategory };
 }
 
+offersCarousel();
+
+// Cerrar el menú de navegación al hacer clic en un enlace
+
 document.querySelectorAll('.nav-link').forEach(link => {
   link.addEventListener('click', () => {
     const nav = document.getElementById('navbarNavAltMarkup');
@@ -144,3 +148,4 @@ document.querySelectorAll('.nav-link').forEach(link => {
     }
   });
 });
+
